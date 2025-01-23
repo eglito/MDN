@@ -1,0 +1,7 @@
+CREATE EXTENSION IF NOT EXIST "pgmdn";
+
+CREATE TABLE event(
+    id UUID DEFAULT get_random_uuid() PRIMARY KEY,
+    email VARCHAR(100) NOT NULL,
+
+);
