@@ -1,6 +1,5 @@
 package com.example.project.domain.entity;
 
-
 import java.util.UUID;
 
 public class User {

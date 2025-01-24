@@ -24,7 +24,7 @@ public class UserDTO {
         this.email = email;
     }
 
-    public Long getUUID() {
+    public UUID getUUID() {
         return this.uuid;
     }
 
