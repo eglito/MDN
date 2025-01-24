@@ -5,11 +5,9 @@ import org.springframework.data.annotation.Id; //Spring DATA = identificação g
 
 import java.util.UUID;
 
+@Entity
+@Table(name = "users")
 public class JPAUserEntity {
-
-    @Entity
-    @Table(name = "users")
-    public class JPAUserEntity {
 
         @Column(name = "emails")
         private String email;
@@ -31,7 +29,6 @@ public class JPAUserEntity {
         public JPAUserEntity(String email, String password){
             this.email = email;
             this.password = password;
-            this.uuid = uuid;
         }
 
         public String getEmail() {
@@ -57,5 +54,4 @@ public class JPAUserEntity {
         public void setId(UUID uuid) {
             this.uuid = uuid;
         }
-
 }
