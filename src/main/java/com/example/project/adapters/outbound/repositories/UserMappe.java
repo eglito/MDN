@@ -5,7 +5,7 @@ import com.example.project.domain.entity.User;
 import org.mapstruct.Mapper;
 
 @Mapper
-public interface UserMapper {
+public interface UserMappe {
 
     UserDTO toUserDTO (User user);
     User toUser(UserDTO userDTO);
