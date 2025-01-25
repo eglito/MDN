@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "adapters/outbound/entities/JPAUserEntity.java")
-public class Controller {
+public class UserController {
 
     @Autowired
     private UserRepository repository;
